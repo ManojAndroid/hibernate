@@ -5,7 +5,8 @@ import com.bridgelabz.hibApp.DTO.DemoDto;
 
 public class testerinsert {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		DemoDto dt = new DemoDto();
 		dt.setBrand("samsung");
 		dt.setPrice(3000.00);
@@ -17,11 +18,14 @@ public class testerinsert {
 		dt2.setColor("green");
 		
 		DemoDao dao = new DemoDao();
-		dao.save(dt);
-		DemoDao dao1 = new DemoDao();
-		dao1.save(dt2);
-		System.out.println("Sucessfully inserted");
-
-
+		dao.displaySingle(12);
+		/*dao.save(dt);*/
+		/*DemoDao dao1 = new DemoDao();
+		dao1.save(dt2);*/
+		/*dao1.displaySingle(6);*/
+		
+		/*dao1.update(3,"nova");
+		dao1.delete(1);
+		dao1.display();*/
 	}
 }
